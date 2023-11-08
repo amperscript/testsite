@@ -522,6 +522,11 @@ button {
 	.small-block {
 		display: none;
 	}
+	.copyright,
+	.politics,
+	.mail {
+		font-size: 12px;
+}
 }
 
 @media screen and (width < 1220px) {
