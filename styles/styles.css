@@ -1,0 +1,531 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: none;
+}
+html {
+	height: 101%;
+}
+body {
+	font-size: 62.5%;
+	line-height: 1;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+strong {
+	font-weight: bold;
+}
+
+input {
+	outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	border: 0;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	color: white;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	max-width: 30px;
+}
+
+.links {
+	margin-left: 45%;
+	white-space: nowrap;
+}
+
+.links ul {
+	list-style: none;
+	display: flex;
+}
+
+.links ul li {
+	margin-right: 20px;
+}
+
+.links a {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: #1e1e1e;
+}
+
+.buttons {
+	white-space: nowrap;
+}
+
+.buttons a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	margin-left: 10px;
+	font-size: 13px;
+}
+
+.info-1,
+.info-2 {
+	transition: 0.8s;
+}
+
+.register-btn {
+	border: 2px solid gray;
+	background-color: gray;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+.login-btn {
+	border: 2px solid gray;
+	font-family: 'Montserrat', sans-serif;
+	color: gray;
+}
+
+.login-btn svg {
+	margin-left: 5px;
+}
+
+.info-1:hover,
+.info-2:hover {
+	transform: scale(1.05);
+}
+
+.bottom-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.block {
+	position: relative;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 350px;
+	border-radius: 20px;
+	margin: 5px;
+	overflow: hidden;
+	background-color: #b3adfa;
+}
+
+.roleplay-block {
+	background-color: #b3adfa;
+	position: relative;
+}
+
+.roleplay-block .block-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 140px;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.later-block {
+	background-color: #b3b3b3;
+}
+
+.content {
+	text-align: center;
+	background-color: white;
+	height: 50%;
+	width: 50%;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.rounded-button {
+	border-radius: 56px;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	background-color: #5700c6;
+	font-weight: 400;
+	font-weight: bold;
+}
+
+.later-block .rounded-button {
+	background-color: gray;
+}
+
+.later-block .block-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 140px;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.content h2,
+p,
+button {
+	font-family: Montserrat Alternates;
+}
+
+.content h2 {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.content p {
+	font-weight: 400;
+	color: gray;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.bottom-block {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bottom-blocks {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.long-block {
+	flex: 3;
+	border-radius: 20px;
+	padding: 10px;
+	background-color: #b3adfa;
+	position: relative;
+	text-align: center;
+}
+
+.long-content {
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 15px;
+}
+
+.small-block {
+	flex: 1;
+	border: 1px solid #e2e8ef;
+	border-radius: 12px;
+	height: 160px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.small-block p {
+	color: #424242;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.small-image {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.small-block p {
+	margin: 0;
+}
+
+.download-btn {
+	border-radius: 56px;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	background-color: #5700c6;
+	font-weight: bold;
+	font-family: Montserrat Alternates;
+}
+
+.download-block .content a {
+	text-decoration: none !important;
+}
+
+.long-block p {
+	font-family: Montserrat Alternates;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.long-block .rounded-button {
+	display: absolute;
+	margin-top: 10px;
+	width: 190px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.long-block img {
+	width: 30%;
+}
+
+.block-info-image {
+	position: absolute;
+	left: 0px;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.download-block {
+	margin-top: 30px;
+	background-color: #b3adfa;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.form {
+	flex: 1;
+	width: 50%;
+}
+
+.side-image {
+	width: 30%;
+	height: auto;
+	margin-left: 25%;
+}
+
+.download-block .rounded-button {
+	background-color: #1e1e1e;
+	font-weight: 400;
+}
+
+.download-block .content {
+	padding: 50px 20px;
+	max-width: 30%;
+}
+
+.footer {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	color: gray;
+	padding: 5px;
+}
+
+.copyright,
+.politics,
+.mail {
+	flex: 1;
+	text-align: center;
+	font-size: 14px;
+}
+
+.footer a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.center {
+	text-align: center;
+}
+
+@media screen and (width < 600px) {
+	.links {
+		display: none;
+	}
+	.buttons {
+		display: none;
+	}
+	.mobile-nav .buttons {
+		display: block;
+		padding: 2em;
+	}
+	.bottom-container {
+		flex-direction: column;
+	}
+	.block {
+		min-height: 200px;
+	}
+	.block .content {
+		width: 60%;
+		min-height: 80px;
+	}
+
+	.block h2 {
+		margin-top: 10px;
+	}
+
+	.block .rounded-button {
+		margin: 10px;
+	}
+
+	.download-block {
+		flex-direction: column;
+	}
+	.download-block .content {
+		max-width: 60% !important;
+	}
+	.side-image {
+		display: none;
+	}
+
+	.small-block {
+		display: none;
+	}
+}
+
+@media screen and (width < 1220px) {
+	.links {
+		margin-left: 20%;
+	}
+}
