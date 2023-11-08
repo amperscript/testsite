@@ -513,7 +513,7 @@ button {
 		flex-direction: column;
 	}
 	.download-block .content {
-		width: 20% !important;
+		min-width: 200px !important;
 	}
 	.side-image {
 		display: none;
@@ -527,5 +527,11 @@ button {
 @media screen and (width < 1220px) {
 	.links {
 		margin-left: 20%;
+	}
+}
+
+@media screen and (width < 300px) {
+	.block img {
+		display: none;
 	}
 }
