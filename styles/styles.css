@@ -513,7 +513,7 @@ button {
 		flex-direction: column;
 	}
 	.download-block .content {
-		width: 80% !important;
+		width: 20% !important;
 	}
 	.side-image {
 		display: none;
